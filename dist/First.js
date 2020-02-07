@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, useParams, useRouteMatch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch } from "react-router-dom";
 import Home from "./Home";
 import Dashboard from "./Dashboard";
 
@@ -28,6 +28,10 @@ const First = props => {
   }, React.createElement(Router, null, React.createElement(FirstRoutes, null)));
 };
 
+console.log("First component", {
+  First,
+  window
+});
 export default First;
 
 if (window) {

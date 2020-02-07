@@ -4,7 +4,6 @@ import {
 	Switch,
 	Route,
 	Link,
-	useParams,
 	useRouteMatch
 } from "react-router-dom";
 
@@ -47,6 +46,7 @@ const First = (props) => {
 	);
 };
 
+console.log("First component", {First, window})
 export default First;
 if (window) {
 	window.First = First
